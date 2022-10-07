@@ -66,3 +66,13 @@ Console.WriteLine($"{result:f2}");
 
 3 -> 1, 8, 27
 5 -> 1, 8, 27, 64, 125*/
+
+Console.WriteLine("Введите натуральное число: ");
+int number = int.Parse(Console.ReadLine()!);
+int index = 1;
+while(index<number){
+    
+      Console.Write($"{Math.Pow(index,3)}, ");
+    index++;
+    }
+Console.Write($"{Math.Pow(number,3)}");
